@@ -1,0 +1,341 @@
+
+hp@rajyuve MINGW64 ~
+$ cd desktop
+
+hp@rajyuve MINGW64 ~/desktop
+$ cd Inf43Hw2
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2
+$ git config --global user.name "ankit"
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2
+$ git config --global user.email "ankitsaw2001@gmail.com"
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2
+$ git config --global -l
+user.name=ankit
+user.email=ankitsaw2001@gmail.com
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2
+$ git init
+Initialized empty Git repository in C:/Users/hp/Desktop/Inf43Hw2/.git/
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git add file1.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "committing a new file with my name"
+[master (root-commit) 1b8bcb2] committing a new file with my name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log
+commit 1b8bcb2ba9a37f9378736f7be6ce8f5d16ee8392 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:24:45 2023 +0530
+
+    committing a new file with my name
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git reset --hard
+HEAD is now at 1b8bcb2 committing a new file with my name
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "now has my major"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -a -m "now has my major"
+[master 0d7aa43] now has my major
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git stage file1.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "added favourite restaurant"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit --amend -m "added favourite restaurant and movie"
+[master 28545e5] added favourite restaurant and movie
+ Date: Thu Mar 23 00:57:52 2023 +0530
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+    added favourite restaurant and movie
+
+commit 1b8bcb2ba9a37f9378736f7be6ce8f5d16ee8392
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:24:45 2023 +0530
+
+    committing a new file with my name
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git checkout master
+Already on 'master'
+M       file1.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+    added favourite restaurant and movie
+
+commit 1b8bcb2ba9a37f9378736f7be6ce8f5d16ee8392
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:24:45 2023 +0530
+
+    committing a new file with my name
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git add file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "creating file2.txt"
+[master 39162d1] creating file2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log
+commit 39162d1d7ac7a13ba2ee2936afa9b6d0bd18c9f1 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:06:16 2023 +0530
+
+    creating file2.txt
+
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+    added favourite restaurant and movie
+
+commit 1b8bcb2ba9a37f9378736f7be6ce8f5d16ee8392
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:24:45 2023 +0530
+
+    committing a new file with my name
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log file2.txt
+commit 39162d1d7ac7a13ba2ee2936afa9b6d0bd18c9f1 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:06:16 2023 +0530
+
+    creating file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        deleted:    file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git rm
+fatal: No pathspec was given. Which files should I remove?
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git add file1.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git rm file2.txt
+rm 'file2.txt'
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "deleting file2.txt"
+[master d2645bc] deleting file2.txt
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+ delete mode 100644 file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log -p -3
+commit d2645bca6b2c38a928576fac41b8893795ca38cc (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:08:58 2023 +0530
+
+    deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f2dcf8e..05eb409 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,2 @@
+-Ankit Kumar computer science
+\ No newline at end of file
++Ankit Kumar computer science curry house bahubali
++pink
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index c74b00a..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-2025 software enginner
+\ No newline at end of file
+
+commit 39162d1d7ac7a13ba2ee2936afa9b6d0bd18c9f1
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:06:16 2023 +0530
+
+    creating file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..c74b00a
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2025 software enginner
+\ No newline at end of file
+
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+    added favourite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index 484dd85..f2dcf8e 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-Ankit Kumar 27744
+\ No newline at end of file
++Ankit Kumar computer science
+\ No newline at end of file
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git checkout HEAD~1 file2.txt
+Updated 1 path from 80d6f38
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git add file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2.txt
+
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git commit -m "re adding file2.txt"
+[master 566b78f] re adding file2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log -p
+commit 566b78fcc1a9b7f483eec0f8479cf00cc1a94471 (HEAD -> master)
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:11:18 2023 +0530
+
+    re adding file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..c74b00a
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2025 software enginner
+\ No newline at end of file
+
+commit d2645bca6b2c38a928576fac41b8893795ca38cc
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:08:58 2023 +0530
+
+    deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f2dcf8e..05eb409 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,2 @@
+-Ankit Kumar computer science
+\ No newline at end of file
++Ankit Kumar computer science curry house bahubali
++pink
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index c74b00a..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-2025 software enginner
+\ No newline at end of file
+
+commit 39162d1d7ac7a13ba2ee2936afa9b6d0bd18c9f1
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:06:16 2023 +0530
+
+    creating file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..c74b00a
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2025 software enginner
+\ No newline at end of file
+
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$ git log -p>git_log_partB.txt
+
+hp@rajyuve MINGW64 ~/desktop/Inf43Hw2 (master)
+$
