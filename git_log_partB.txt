@@ -1,0 +1,84 @@
+commit 566b78fcc1a9b7f483eec0f8479cf00cc1a94471
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:11:18 2023 +0530
+
+    re adding file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..c74b00a
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2025 software enginner
+\ No newline at end of file
+
+commit d2645bca6b2c38a928576fac41b8893795ca38cc
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:08:58 2023 +0530
+
+    deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f2dcf8e..05eb409 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,2 @@
+-Ankit Kumar computer science
+\ No newline at end of file
++Ankit Kumar computer science curry house bahubali
++pink
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index c74b00a..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-2025 software enginner
+\ No newline at end of file
+
+commit 39162d1d7ac7a13ba2ee2936afa9b6d0bd18c9f1
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 01:06:16 2023 +0530
+
+    creating file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..c74b00a
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2025 software enginner
+\ No newline at end of file
+
+commit 28545e58a5486b8b8e7d0efd36a0c640cbac42e8
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:57:52 2023 +0530
+
+    added favourite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index 484dd85..f2dcf8e 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-Ankit Kumar 27744
+\ No newline at end of file
++Ankit Kumar computer science
+\ No newline at end of file
+
+commit 1b8bcb2ba9a37f9378736f7be6ce8f5d16ee8392
+Author: ankit <ankitsaw2001@gmail.com>
+Date:   Thu Mar 23 00:24:45 2023 +0530
+
+    committing a new file with my name
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..484dd85
+--- /dev/null
++++ b/file1.txt
+@@ -0,0 +1 @@
++Ankit Kumar 27744
+\ No newline at end of file
